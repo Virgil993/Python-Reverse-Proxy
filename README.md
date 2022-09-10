@@ -13,3 +13,5 @@ To run the project , you must first have installed Python with the latest versio
 8. In a terminal in VS Code run these 2 commands:python manage.py makemigrations and python manage.py migrate
 9. Then run the command python manage.py runserver 8080 and your server should be up and running. 
 
+My application simulates a reverse proxy server which takes requests from the user and then sends those requests to an API that contains data for testing. After recieving the response from the API , my application modifies that JSON response and sends it back to the user. My project also stores in a database all requests and responses that are sent through the proxy server.
+
